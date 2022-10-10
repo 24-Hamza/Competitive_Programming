@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a,b,c;
+        clrscr();
+        printf("Enter 2 elements:");
+        scanf("%d%d",&a,&b);
+        c=a;
+        while(a%b!=0)
+        {
+        	a=a+1;
+        }
+        while(a%b==0)
+	{
+        	break;
+        }
+        c=a-c;
+        printf("No of moves taken is %d",c);
+	getch();
+}
